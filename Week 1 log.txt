@@ -1,0 +1,44 @@
+7/10
+Meeting at UCLA, paperwork
+Read paper: Named Data Networking
+Online reading to learn more about Tango
+
+7/11
+Followed these guides:
+Google guide for Unity + Tango: https://developers.google.com/tango/apis/unity/
+								https://developers.google.com/tango/apis/unity/unity-setup
+								https://developers.google.com/tango/apis/unity/unity-howto-motion-tracking
+Unity guide for Android SDK: https://docs.unity3d.com/Manual/android-sdksetup.html
+Started reading paper: Named Data Networking of Things
+
+Useful logcat info for debugging and errors: https://logmatic.io/blog/a-how-to-guide-to-debugging-with-android-logcat/
+
+Can't run "how-to: motion tracking" sample app, strange error:
+07-11 21:23:10.673 15876 15876 E AndroidRuntime: FATAL EXCEPTION: main
+07-11 21:23:10.673 15876 15876 E AndroidRuntime: Process: com.ucla.tangotest1, PID: 15876
+07-11 21:23:10.673 15876 15876 E AndroidRuntime: java.lang.Error: FATAL EXCEPTION [main]
+07-11 21:23:10.673 15876 15876 E AndroidRuntime: Unity version     : 2017.1.0f3
+07-11 21:23:10.673 15876 15876 E AndroidRuntime: Device model      : LENOVO Lenovo PB2-690Y
+07-11 21:23:10.673 15876 15876 E AndroidRuntime: Device fingerprint: Lenovo/phinny_na/PB2PRO:6.0.1/MMB29M/PB2-690Y_S200032_161214:user/release-keys
+07-11 21:23:10.673 15876 15876 E AndroidRuntime:
+07-11 21:23:10.673 15876 15876 E AndroidRuntime: Caused by: java.lang.NoSuchMethodError: No direct method <init>(Landroid/content/ContextWrapper;)V in class Lcom/unity3d/player/UnityPlayer; or its super classes (declaration of 'com.unity3d.player.UnityPlayer' appears in /data/app/com.ucla.tangotest1-2/base.apk)
+07-11 21:23:10.673 15876 15876 E AndroidRuntime:        at com.google.unity.GoogleUnityActivity.onCreate(GoogleUnityActivity.java:106)
+07-11 21:23:10.673 15876 15876 E AndroidRuntime:        at android.app.Activity.performCreate(Activity.java:6285)
+07-11 21:23:10.673 15876 15876 E AndroidRuntime:        at android.app.Instrumentation.callActivityOnCreate(Instrumentation.java:1108)
+07-11 21:23:10.673 15876 15876 E AndroidRuntime:        at android.app.ActivityThread.performLaunchActivity(ActivityThread.java:2370)
+07-11 21:23:10.673 15876 15876 E AndroidRuntime:        at android.app.ActivityThread.handleLaunchActivity(ActivityThread.java:2477)
+07-11 21:23:10.673 15876 15876 E AndroidRuntime:        at android.app.ActivityThread.access$900(ActivityThread.java:150)
+07-11 21:23:10.673 15876 15876 E AndroidRuntime:        at android.app.ActivityThread$H.handleMessage(ActivityThread.java:1344)
+07-11 21:23:10.673 15876 15876 E AndroidRuntime:        at android.os.Handler.dispatchMessage(Handler.java:102)
+07-11 21:23:10.673 15876 15876 E AndroidRuntime:        at android.os.Looper.loop(Looper.java:148)
+07-11 21:23:10.673 15876 15876 E AndroidRuntime:        at android.app.ActivityThread.main(ActivityThread.java:5418)
+07-11 21:23:10.673 15876 15876 E AndroidRuntime:        at java.lang.reflect.Method.invoke(Native Method)
+07-11 21:23:10.673 15876 15876 E AndroidRuntime:        at com.android.internal.os.ZygoteInit$MethodAndArgsCaller.run(ZygoteInit.java:726)
+07-11 21:23:10.673 15876 15876 E AndroidRuntime:        at com.android.internal.os.ZygoteInit.main(ZygoteInit.java:616)
+
+Successfully built and ran a one scene project with a main camera, 3D cube and point light - but didn't use Tango.
+Error seems to be related to Tango, double check integration with Unity tomorrow
+
+
+
+
