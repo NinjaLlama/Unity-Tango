@@ -1,6 +1,6 @@
 7/10
 Meeting at UCLA, paperwork
-Read paper: Named Data Networking
+Read paper: "Named Data Networking"
 Online reading to learn more about Tango
 
 
@@ -14,7 +14,7 @@ Google guide for Unity + Tango:
 Unity guide for Android SDK: 
 	https://docs.unity3d.com/Manual/android-sdksetup.html
 	
-Started reading paper: Named Data Networking of Things
+Started reading paper: "Named Data Networking of Things"
 
 Useful logcat info for debugging and errors:
 	https://logmatic.io/blog/a-how-to-guide-to-debugging-with-android-logcat/
@@ -72,10 +72,21 @@ Tutorials that work:
 
 Want to learn more about how to use the camera + the examples on Tango github.
 
-Finished reading paper: Named Data Networking of Things
+Finished reading paper: "Named Data Networking of Things"
 
 
+7/13
+Added the Tango examples to a Unity project so I could try them out and compare... so helpful!
+Learning how this all works... want to know more about motion tracking and object recongition.
+Fixed the camera issues, it displays properly now.
+(Also the examples have the internet access permission set to "require" instead of the default "auto")
 
+Looked up how to play video on objects in Unity.
+Before 5.6 Movie Texture was used but this was only available in the pro version.
+From 5.6 up, the Video Player component is used and is available in the personal version.
+Will test this out tomorrow.
+
+Started reading paper: "Breaking out of the Cloud: Local Trust Management and ..."
 
 
 
