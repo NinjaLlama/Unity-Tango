@@ -1,8 +1,9 @@
-﻿<Properties StartupItem="TangoTest.csproj">
-  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
-  <MonoDevelop.Ide.Workbench ActiveDocument="Assets\TangoPrefabs\Scripts\TangoPoseController.cs">
+﻿<Properties StartupItem="Assembly-CSharp.csproj">
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" PreferredExecutionTarget="Unity.Instance.Unity Editor" />
+  <MonoDevelop.Ide.Workbench ActiveDocument="Assets\AddAudio.cs">
     <Files>
       <File FileName="Assets\TangoPrefabs\Scripts\TangoPoseController.cs" Line="1" Column="1" />
+      <File FileName="Assets\AddAudio.cs" Line="93" Column="5" />
     </Files>
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.DebuggingService.Breakpoints>

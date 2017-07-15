@@ -89,6 +89,21 @@ Will test this out tomorrow.
 Started reading paper: "Breaking out of the Cloud: Local Trust Management and ..."
 
 
+7/14
+Tested playing a video on an object. It plays the video but doesn't play the audio.
+Maybe my sample video was not the right format?
+	https://forum.unity3d.com/threads/correct-video-format-for-video-playback.446011/#post-2887083
+Says mp4 should work...
+Kind of works by adding the audio separately and having the video and audio play together.
+Not very elegant. Will try VideoPlayer with more formats mentioned in the link.
+
+Made an app the combines the elements of all the tutorials that I've done so far.
+Can use the camera to place objects in the world that play video.
+Want to implement clicking the objects again to make them go away.
+Also want next to try to incorporate some motion tracking and object recongition.
+Need more tutorials for this^
+
+Read paper: "Browsing an AR with NDN"
 
 
 
