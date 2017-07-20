@@ -1,0 +1,23 @@
+7/17
+Unity tutorials on UI
+	https://unity3d.com/learn/tutorials/topics/user-interface-ui/
+The Tango examples don't follow this, they create the buttons at runtime
+
+Read paper: "Name-Based Access Control"
+
+
+7/18
+Added some UI elements to "TangoPlacingObjects" project
+Want to be able to interact with gameobjects themselves
+	https://forum.unity3d.com/threads/how-do-i-detect-a-touch-on-a-gameobject.332476/
+
+Unity Remote 5
+
+7/19
+Video conference
+1 & 2 for 2016
+	http://named-data.net/publications/tutorials/
+This example in Unity
+	https://github.com/named-data/ndn-dot-net/blob/master/examples/test-get-async.cs
+	
+Depth data from Tango?

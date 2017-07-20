@@ -1,0 +1,7 @@
+Assigned papers: thoughts and questions so far
+	- I read that NDN could be implemented on the existing network hardware.
+		What about the software side? How much change would have to happen there?
+		How long would a transition like this take? I'm thinking decades.
+	- Privacy related: how do you hide the name of your packets?
+		Like if there are only 2 people on a network, could one see the name of the other's packets?
+	- Battery life

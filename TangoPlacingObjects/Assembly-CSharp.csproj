@@ -46,10 +46,12 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+     <Compile Include="Assets\ChangeScene.cs" />
      <Compile Include="Assets\Google-Unity\Scripts\AndroidHelper.cs" />
      <Compile Include="Assets\Google-Unity\Scripts\AndroidLifecycle.cs" />
      <Compile Include="Assets\KittyUIController.cs" />
      <Compile Include="Assets\PlaceVideo.cs" />
+     <Compile Include="Assets\RemoveObject.cs" />
      <Compile Include="Assets\TangoPrefabs\Deprecated\TangoARPoseController.cs" />
      <Compile Include="Assets\TangoPrefabs\Deprecated\TangoDeltaPoseController.cs" />
      <Compile Include="Assets\TangoPrefabs\Scripts\ARCameraPostProcess.cs" />

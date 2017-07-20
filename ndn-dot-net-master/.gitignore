@@ -1,0 +1,10 @@
+# Emacs temp files
+*~
+
+# Eclipse files
+/eclipse/.metadata
+/eclipse/jndn/bin
+/eclipse/translation_jndn_*
+
+# Mac OSX
+.DS_Store
