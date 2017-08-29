@@ -1,4 +1,4 @@
 sceneSetups:
-- path: Assets/TangoSDK/Examples/Scenes/DetectTangoCore.unity
+- path: Assets/TangoSDK/Examples/Scenes/PointCloud.unity
   isLoaded: 1
   isActive: 1
