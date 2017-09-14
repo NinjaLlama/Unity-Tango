@@ -48,8 +48,10 @@
   <ItemGroup>
      <Compile Include="Assets\Google-Unity\Scripts\AndroidHelper.cs" />
      <Compile Include="Assets\Google-Unity\Scripts\AndroidLifecycle.cs" />
+     <Compile Include="Assets\Scripts\AnnotationsFetcher.cs" />
      <Compile Include="Assets\Scripts\BoundingBoxObjectData.cs" />
      <Compile Include="Assets\Scripts\BoundingBoxPoolManager.cs" />
+     <Compile Include="Assets\Scripts\ConcurrentQueue.cs" />
      <Compile Include="Assets\Scripts\FrameObjectData.cs" />
      <Compile Include="Assets\Scripts\FramePoolManager.cs" />
      <Compile Include="Assets\Scripts\LabelBackground.cs" />
@@ -59,6 +61,7 @@
      <Compile Include="Assets\Scripts\OnCameraFrame.cs" />
      <Compile Include="Assets\Scripts\PointCloudGUI.cs" />
      <Compile Include="Assets\Scripts\PooledObject.cs" />
+     <Compile Include="Assets\Scripts\RingBuffer.cs" />
      <Compile Include="Assets\Scripts\cnl\content-meta-info.cs" />
      <Compile Include="Assets\Scripts\cnl\generalized-content.cs" />
      <Compile Include="Assets\Scripts\cnl\namespace.cs" />

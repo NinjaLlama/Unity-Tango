@@ -73,7 +73,7 @@ public class BoundingBoxObjectData : PooledObject {
 
 	// Use this for initialization
 	void Start () {
-		frameCount = 10;
+		frameCount = 30;
 
 		//rotate to camera
 		//box.transform.rotation = Quaternion.LookRotation (Camera.main.transform.up, -Camera.main.transform.forward) * Quaternion.Euler (90f, 0, 0);
@@ -139,10 +139,11 @@ public class BoundingBoxObjectData : PooledObject {
 	void Update () {
 		//box.transform.RotateAround (box.transform.position, box.transform.TransformDirection(Vector3.up), 5f);
 		//box.transform.rotation = Quaternion.LookRotation (Camera.main.transform.up, -Camera.main.transform.forward) * Quaternion.Euler (90f, 0, 0);
-
+		box.transform.LookAt (box.transform.position + Camera.main.transform.rotation * Vector3.forward,
+			Camera.main.transform.rotation * Vector3.up);
 			frameCount--;
 			if (frameCount == 0) {
-				frameCount = 10;
+				frameCount = 30;
 				Release();
 			}
 	}

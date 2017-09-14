@@ -101,6 +101,6 @@ public class BoundingBoxPoolManager : MonoBehaviour {
 	
 	// Update is called once per frame
 	void Update () {
-		spawn.box.transform.rotation = Quaternion.LookRotation (Camera.main.transform.up, -Camera.main.transform.forward) * Quaternion.Euler (90f, 0, 0);
+		//spawn.box.transform.rotation = Quaternion.LookRotation (Camera.main.transform.up, -Camera.main.transform.forward) * Quaternion.Euler (90f, 0, 0);
 	}
 }

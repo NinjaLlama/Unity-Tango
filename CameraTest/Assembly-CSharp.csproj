@@ -50,6 +50,7 @@
      <Compile Include="Assets\003 Drawing Lines\src\LinesGR.cs" />
      <Compile Include="Assets\003 Drawing Lines\src\LinesLR.cs" />
      <Compile Include="Assets\BoundingBoxObjectData.cs" />
+     <Compile Include="Assets\ChangeScene.cs" />
      <Compile Include="Assets\CubeBounds.cs" />
      <Compile Include="Assets\DimBoxes\BoundBox\BoundBox.cs" />
      <Compile Include="Assets\DimBoxes\BoundBox\DrawLines.cs" />
@@ -63,6 +64,7 @@
      <Compile Include="Assets\LastFrameData.cs" />
      <Compile Include="Assets\OnCameraFrame.cs" />
      <Compile Include="Assets\PointCloudGUI.cs" />
+     <Compile Include="Assets\SceneLayout.cs" />
      <Compile Include="Assets\Scripts\BoundingBoxPoolManager.cs" />
      <Compile Include="Assets\Scripts\ObjectPool.cs" />
      <Compile Include="Assets\Scripts\PooledObject.cs" />

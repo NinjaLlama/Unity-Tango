@@ -129,48 +129,48 @@ public class PointCloudGUI : MonoBehaviour
     /// </summary>
     public void OnGUI()
     {
-        if (m_tangoApplication.HasRequiredPermissions)
-        {
-            Color oldColor = GUI.color;
-            GUI.color = Color.black;
-
-            GUI.Label(new Rect(UI_LABEL_START_X, UI_LABEL_START_Y, UI_LABEL_SIZE_X, UI_LABEL_SIZE_Y),
-                      UI_FONT_SIZE + String.Format(UX_TANGO_SERVICE_VERSION, TangoApplication.GetTangoServiceVersion()) + "</size>");
-
-            GUI.Label(new Rect(UI_LABEL_START_X, UI_FPS_LABEL_START_Y, UI_LABEL_SIZE_X, UI_LABEL_SIZE_Y),
-                      UI_FONT_SIZE + m_fpsText + "</size>");
-
-            // MOTION TRACKING
-            GUI.Label(new Rect(UI_LABEL_START_X, UI_POSE_LABEL_START_Y - UI_LABEL_OFFSET, UI_LABEL_SIZE_X, UI_LABEL_SIZE_Y),
-                      UI_FONT_SIZE + String.Format(UX_TARGET_TO_BASE_FRAME, "Device", "Start") + "</size>");
-
-            logString = String.Format(UX_STATUS, 
-                _GetLoggingStringFromVec3(m_tangoPoseController.transform.position),
-                _GetLoggingStringFromQuaternion(m_tangoPoseController.transform.rotation));
-
-            GUI.Label(new Rect(UI_LABEL_START_X, UI_POSE_LABEL_START_Y, UI_LABEL_SIZE_X, UI_LABEL_SIZE_Y),
-                      UI_FONT_SIZE + logString + "</size>");
-
-            GUI.Label(new Rect(UI_LABEL_START_X, UI_DEPTH_LABLE_START_Y, UI_LABEL_SIZE_X, UI_LABEL_SIZE_Y),
-                      UI_FONT_SIZE + "Average depth (m): " + m_pointcloud.m_overallZ.ToString() + "</size>");
-
-            GUI.Label(new Rect(UI_LABEL_START_X, UI_DEPTH_LABLE_START_Y + (UI_LABEL_OFFSET * 1.0f), UI_LABEL_SIZE_X, UI_LABEL_SIZE_Y),
-                      UI_FONT_SIZE + "Point count: " + m_pointcloud.m_pointsCount.ToString() + "</size>");
-
-            GUI.Label(new Rect(UI_LABEL_START_X, UI_DEPTH_LABLE_START_Y + (UI_LABEL_OFFSET * 2.0f), UI_LABEL_SIZE_X, UI_LABEL_SIZE_Y),
-                      UI_FONT_SIZE + "Frame delta time (ms): " + m_pointcloud.m_depthDeltaTime.ToString(UI_FLOAT_FORMAT) + "</size>");
-
-			GUI.Label(new Rect(UI_LABEL_START_X, UI_DEPTH_LABLE_START_Y + (UI_LABEL_OFFSET * 3.0f), UI_LABEL_SIZE_X, UI_LABEL_SIZE_Y),
-				UI_FONT_SIZE + "Last frame (s): " + lastFrame.timestamp + "</size>");
-
-			GUI.Label(new Rect(UI_LABEL_START_X, UI_DEPTH_LABLE_START_Y + (UI_LABEL_OFFSET * 4.0f), UI_LABEL_SIZE_X, UI_LABEL_SIZE_Y),
-				UI_FONT_SIZE + "Position: " + lastFrame.camPos + "</size>");
-
-			GUI.Label(new Rect(UI_LABEL_START_X, UI_DEPTH_LABLE_START_Y + (UI_LABEL_OFFSET * 5.0f), UI_LABEL_SIZE_X, UI_LABEL_SIZE_Y),
-				UI_FONT_SIZE + "Rotation: " + lastFrame.camRot + "</size>");
-
-            GUI.color = oldColor;
-        }
+//        if (m_tangoApplication.HasRequiredPermissions)
+//        {
+//            Color oldColor = GUI.color;
+//            GUI.color = Color.black;
+//
+//            GUI.Label(new Rect(UI_LABEL_START_X, UI_LABEL_START_Y, UI_LABEL_SIZE_X, UI_LABEL_SIZE_Y),
+//                      UI_FONT_SIZE + String.Format(UX_TANGO_SERVICE_VERSION, TangoApplication.GetTangoServiceVersion()) + "</size>");
+//
+//            GUI.Label(new Rect(UI_LABEL_START_X, UI_FPS_LABEL_START_Y, UI_LABEL_SIZE_X, UI_LABEL_SIZE_Y),
+//                      UI_FONT_SIZE + m_fpsText + "</size>");
+//
+//            // MOTION TRACKING
+//            GUI.Label(new Rect(UI_LABEL_START_X, UI_POSE_LABEL_START_Y - UI_LABEL_OFFSET, UI_LABEL_SIZE_X, UI_LABEL_SIZE_Y),
+//                      UI_FONT_SIZE + String.Format(UX_TARGET_TO_BASE_FRAME, "Device", "Start") + "</size>");
+//
+//            logString = String.Format(UX_STATUS, 
+//                _GetLoggingStringFromVec3(m_tangoPoseController.transform.position),
+//                _GetLoggingStringFromQuaternion(m_tangoPoseController.transform.rotation));
+//
+//            GUI.Label(new Rect(UI_LABEL_START_X, UI_POSE_LABEL_START_Y, UI_LABEL_SIZE_X, UI_LABEL_SIZE_Y),
+//                      UI_FONT_SIZE + logString + "</size>");
+//
+//            GUI.Label(new Rect(UI_LABEL_START_X, UI_DEPTH_LABLE_START_Y, UI_LABEL_SIZE_X, UI_LABEL_SIZE_Y),
+//                      UI_FONT_SIZE + "Average depth (m): " + m_pointcloud.m_overallZ.ToString() + "</size>");
+//
+//            GUI.Label(new Rect(UI_LABEL_START_X, UI_DEPTH_LABLE_START_Y + (UI_LABEL_OFFSET * 1.0f), UI_LABEL_SIZE_X, UI_LABEL_SIZE_Y),
+//                      UI_FONT_SIZE + "Point count: " + m_pointcloud.m_pointsCount.ToString() + "</size>");
+//
+//            GUI.Label(new Rect(UI_LABEL_START_X, UI_DEPTH_LABLE_START_Y + (UI_LABEL_OFFSET * 2.0f), UI_LABEL_SIZE_X, UI_LABEL_SIZE_Y),
+//                      UI_FONT_SIZE + "Frame delta time (ms): " + m_pointcloud.m_depthDeltaTime.ToString(UI_FLOAT_FORMAT) + "</size>");
+//
+//			GUI.Label(new Rect(UI_LABEL_START_X, UI_DEPTH_LABLE_START_Y + (UI_LABEL_OFFSET * 3.0f), UI_LABEL_SIZE_X, UI_LABEL_SIZE_Y),
+//				UI_FONT_SIZE + "Last frame (s): " + lastFrame.timestamp + "</size>");
+//
+//			GUI.Label(new Rect(UI_LABEL_START_X, UI_DEPTH_LABLE_START_Y + (UI_LABEL_OFFSET * 4.0f), UI_LABEL_SIZE_X, UI_LABEL_SIZE_Y),
+//				UI_FONT_SIZE + "Position: " + lastFrame.camPos + "</size>");
+//
+//			GUI.Label(new Rect(UI_LABEL_START_X, UI_DEPTH_LABLE_START_Y + (UI_LABEL_OFFSET * 5.0f), UI_LABEL_SIZE_X, UI_LABEL_SIZE_Y),
+//				UI_FONT_SIZE + "Rotation: " + lastFrame.camRot + "</size>");
+//
+//            GUI.color = oldColor;
+//        }
     }
 
     /// <summary>

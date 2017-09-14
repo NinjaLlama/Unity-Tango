@@ -56,12 +56,12 @@ public class LabelData : PooledObject {
 
 		background = gameObject.GetComponentInChildren<LabelBackground>();
 		//background.render.transform.localScale.Set (rect.sizeDelta.x/10, rect.sizeDelta.y/10, 0);
-		background.render.material.color = Color.green;
+		background.render.material.color = color;
 
 		//rotate to camera
 		//text.transform.rotation = Quaternion.LookRotation (Camera.main.transform.up, -Camera.main.transform.forward) * Quaternion.Euler (90f, 0, 0);
 
-		frameCount = 10;
+		frameCount = 30;
 //		var thisMatrix = box.transform.localToWorldMatrix;
 //		var storedRotation = box.transform.rotation;
 //		box.transform.rotation = Quaternion.identity;
@@ -100,13 +100,15 @@ public class LabelData : PooledObject {
 	
 	// Update is called once per frame
 	void Update () {
+		text.transform.LookAt (text.transform.position + Camera.main.transform.rotation * Vector3.forward,
+			Camera.main.transform.rotation * Vector3.up);
 		if (resize) {
 			//SizeCollider ();
 			resize = false;
 		}
 		frameCount--;
 		if (frameCount == 0) {
-			frameCount = 10;
+			frameCount = 30;
 			Release ();
 		}
 //		//rotate to camera
